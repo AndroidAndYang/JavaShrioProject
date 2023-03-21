@@ -78,16 +78,4 @@ public class SysUserEntity implements Serializable {
 	 * 创建时间
 	 */
 	private Date createTime;
-
-	/**
-	 * 部门ID
-	 */
-	@NotNull(message="部门不能为空", groups = {AddGroup.class, UpdateGroup.class})
-	private Long deptId;
-
-	/**
-	 * 部门名称
-	 */
-	@TableField(exist=false)
-	private String deptName;
 }
